@@ -34,7 +34,7 @@ function getRandomStarWarsFact(callback){
 var app = express();
 app.set('port', (process.env.PORT || 5000));
 app.get('/', function(req, res){
-  getRandomStarWarsFact(res.send);
+  res.send('StarWarsBot is up and running');
 });
 
 var server = app.listen(app.get('port'), function() {
