@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node index.js"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.4"
+    "botkit": "0.0.7",
+    "express": "^4.13.4",
+    "slackbots": "^0.5.1"
   },
-  "engines":{
-    "node":"5.6.0"
+  "engines": {
+    "node": "5.6.0"
   }
 }
