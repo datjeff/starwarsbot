@@ -12,7 +12,12 @@ app.get('/', function(req, res){
     //   //console.log(result);
     //   res.send([person, world])
     // })
-    res.send(person);
+    swapi.get(person.homeworld).then(function(homeworld){
+      res.send(person.name + " was from " + homeworld.name+". This "+person.gender+" was "
+      + person.height + "cm tall and "+person.mass+ "kg. Eye-color was " +person.eye_color+
+    " with " +person.skin_color + " skin. Birth year was " + person.birth_year+". ");
+
+    })
 
   })
   //res.send("hello, world.");
