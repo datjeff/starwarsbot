@@ -20,7 +20,7 @@ controller.hears('facts',['direct_message', 'direct_mention','mention'],function
 });
 
 function getRandomStarWarsFact(callback){
-  var num = Math.floor((Math.random() * 10) + 1);
+  var num = Math.floor((Math.random() * 88) + 1);
   swapi.getPerson(num).then(function(person){
     swapi.get(person.homeworld).then(function(homeworld){
       callback(person.name + " was from " + homeworld.name+". This "+person.gender+" was "
